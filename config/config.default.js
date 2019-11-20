@@ -26,6 +26,23 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
+  config.logger = {
+    dir: '/logs/egg-demo',
+  }
+
+  // https://github.com/settings/applications/
+  config.passportGithub = {
+    key: 'e64338613b55ad91d49d',
+    secret: '41913d814e5bac3943699fd82e0c2bedbf2a9d17',
+  }
+
+  config.security= {
+    csrf : {
+      headerName: 'x-csrf-token',// 自定义请求头
+      enable: false,
+    }
+ }
+
   // 连接数据库
   config.sequelize = {
     delegate: 'model',
