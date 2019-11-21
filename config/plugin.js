@@ -15,4 +15,8 @@ module.exports = {
     enable: true,
     package: 'egg-passport-github',
   },
+  nunjucks : {
+    enable: true,
+    package: 'egg-view-nunjucks',
+  }
 };
