@@ -1,12 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    444400004444
-</body>
-</html>
+{% extends "main.nj" %}
+{% block css %}
+<link rel="stylesheet" href="/css/404.css">
+{% endblock %}
+{% block title %}
+<title>404-page not found</title>
+{% endblock %}
+{% block js %}
+{% endblock %}
+
+{% block content %}
+
+<div class="sun"></div>
+<div class="clouds">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="birds"></div>
+<div class="sea">
+    <div class="wave w-1"></div>
+    <div class="wave w-2"></div>
+    <div class="fish"><span></span><span></span><span></span>
+    </div>
+</div>
+<div class="error"> <span>Page not found</span><span>404</span><span><a href="/">Swim Home, IDIOT</a></span>
+</div>
+<div class="bottom">
+    <div class="grass"><span> </span><span> </span><span> </span>
+    </div>
+    <div class="grass"><span> </span><span> </span><span> </span>
+    </div>
+    <div class="grass"><span> </span><span> </span><span> </span>
+    </div>
+    <div class="grass"><span> </span><span> </span><span> </span>
+    </div>
+    <div class="circle"><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="circle"><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="circle"><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="circle"><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="grass_tw"></div>
+    <div class="grass_tw"></div>
+    <div class="grass_tw"></div>
+</div>
+{% endblock %}

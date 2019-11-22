@@ -7,6 +7,12 @@ class HomeController extends Controller {
     const { ctx } = this;
     // ctx.body = 'hi, egg';
 
+    ctx.logger.info(ctx.user)
+    if(!ctx.user){
+      await ctx.render('sys/login', {user: 'sblov'});
+      return;
+    }
+
     await ctx.render('index', {user: 'sblov'});
   }
 
