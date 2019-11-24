@@ -1,0 +1,60 @@
+.projects {
+    padding: 50px 30px;
+    margin-top: 80px;
+}
+
+.projects .container-fluid .row {
+    margin: 0px;
+    padding: 15px 50px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.project .image {
+    max-width: 50px;
+    min-width: 50px;
+    max-height: 50px;
+    margin-right: 15px;
+}
+
+.project .project-date span {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.project .time,
+.project .comments,
+.project .project-progress {
+    color: #999;
+    font-size: 0.9em;
+    margin-right: 20px;
+}
+
+.bg-red {
+    background: #86c5da !important;
+    color: #fff;
+}
+
+.bg-green,
+.bg-violet,
+.bg-orange {
+    background: #86c5da !important;
+    color: #fff;
+}
+
+
+.project .project-progress {
+    width: 200px;
+}
+
+.project .time,
+.project .comments,
+.project .project-progress {
+    color: #999;
+    font-size: 0.9em;
+    margin-right: 20px;
+}

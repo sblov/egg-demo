@@ -5,15 +5,20 @@ const Controller = require('egg').Controller;
 class HomeController extends Controller {
   async index() {
     const { ctx } = this;
-    // ctx.body = 'hi, egg';
 
     ctx.logger.info(ctx.user)
     if(!ctx.user){
-      await ctx.render('sys/login', {user: 'sblov'});
+      await ctx.redirect('/login');
       return;
     }
 
-    await ctx.render('index', {user: 'sblov'});
+    await ctx.render('index', {user: ctx.user.name});
+  }
+  
+
+  async login(){
+    const { ctx } = this;
+    await ctx.render('login');
   }
 
   async curl() {
@@ -63,6 +68,16 @@ class HomeController extends Controller {
     const ctx = this.ctx;
     
     await ctx.render('404');
+  }
+
+  async onerror(){
+    const ctx = this.ctx;
+
+    return ctx.redirect('/');
+  }
+
+  async loginCallback(){
+    
   }
 }
 
