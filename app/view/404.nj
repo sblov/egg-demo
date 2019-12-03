@@ -1,6 +1,6 @@
 {% extends "main.nj" %}
 {% block css %}
-<link rel="stylesheet" href="/css/404.css">
+<link rel="stylesheet" href="/css/app/404.css">
 {% endblock %}
 {% block title %}
 <title>404-page not found</title>

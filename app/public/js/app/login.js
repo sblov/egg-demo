@@ -177,7 +177,7 @@ $(document).ready(function () {
     $('#login').click(() => {
         $.post("/passport/local?username=root&password=admin", function (result) {
             // $("span").html(result);
-            window.location.href = '/crawler/home'
+            window.location.href = '/'
         });
     })
 });

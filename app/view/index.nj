@@ -1,12 +1,64 @@
 {% extends "main.nj" %}
+{% block css %}
+{{ super() }}
+<!--====== Default css ======-->
+<link rel="stylesheet" href="/assets/css/default.css">
+<!--====== Style css ======-->
+<link rel="stylesheet" href="/assets/css/style.css">
+{% endblock %}
 {% block content %}
-<div class="container">
-    <div class="well">
 
-        <div class="page-header">
-            <h1>nunjucks demo <small>{{ user }}</small></h1>
+<body style="background-color: #f4f6f7;">
+    <section id="services" class="services-area " style="height: 100%;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center pb-20">
+                        <h3 class="title">应用服务</h3>
+                        <p class="text">进入多个独立的应用服务</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-services mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="services-icon">
+                            <img src="assets/images/logo-2.svg" alt="Logo">
+                        </div>
+                        <div class="services-content">
+                            <h5 class="services-title"><a href="crawler/home">Any Crawler</a></h5>
+                            <p class="text">No matter what website, if you want to grab resources, you can contact me by
+                                email and only grab normal and legal data!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-services mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s"
+                        style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <div class="services-icon">
+                            <img src="assets/images/logo-2.svg" alt="Logo">
+                        </div>
+                        <div class="services-content">
+                            <h5 class="services-title"><a href="#">Developing ......</a></h5>
+                            <p class="text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-services mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s"
+                        style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <div class="services-icon">
+                            <img src="assets/images/logo-2.svg" alt="Logo">
+                        </div>
+                        <div class="services-content">
+                            <h5 class="services-title"><a href="#">Developing ......</a></h5>
+                            <p class="text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-</div>
+    </section>
+</body>
 {% endblock %}
