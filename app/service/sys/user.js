@@ -2,9 +2,9 @@ const Service = require('egg').Service;
 
 class UserService extends Service {
     // 通过id获取用户信息
-    getUserById = async (
+    async getUserById (
         id,
-    ) => {
+    ) {
         const {
             ctx
         } = this;
@@ -27,11 +27,11 @@ class UserService extends Service {
         return userInfo;
     }
 
-    register1 = async ({
+    async register1 ({
         login,
         name,
         password
-    }) => {
+    }) {
         const {
             ctx
         } = this;
@@ -82,7 +82,7 @@ class UserService extends Service {
         }
     }
 
-    register = async (authUser) => {
+    async register (authUser) {
 
         const { ctx } = this;
 

@@ -56,10 +56,10 @@ module.exports = appInfo => {
       // path.join(appInfo.baseDir, 'path/to/another'),
     ].join(','),
     mapping: {
-      '.nj': 'nunjucks',
+      '.html': 'nunjucks',
     },
     // 果配置了 defaultExtension 可以省略后缀。
-    defaultExtension: '.nj',
+    defaultExtension: '.html',
   };
 
   config.logger = {

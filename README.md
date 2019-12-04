@@ -31,3 +31,5 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+
+免费cdn：jsDeliver+github/npm
