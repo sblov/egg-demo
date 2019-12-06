@@ -20,6 +20,13 @@ class CrawlerController extends Controller {
 
     await ctx.render('app/code');
   }
+
+  async img() {
+    const { ctx } = this;
+
+    const imgInfo = await this.ctx.service.app.imgResource.findAll();
+    await ctx.render('app/img', {imgInfo: imgInfo });
+  }
   
 }
 

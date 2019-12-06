@@ -10,13 +10,13 @@ function loadWidget(waifuPath, apiPath) {
 			<div id="waifu-tips"></div>
 			<canvas id="live2d" width="300" height="300"></canvas>
 			<div id="waifu-tool">
-				<span class="fa fa-lg fa-comment fa-commenting"></span>
+				<span class="fa fa-lg fa-comment fa-commenting" style="color:#86c5da"></span>
 				<span class="fa fa-lg fa-paper-plane" hidden></span>
-				<span class="fa fa-lg fa-smile-o fa-smile-o"></span>
-				<span class="fa fa-lg fa-child"></span>
-				<span class="fa fa-lg fa-camera fa-camera"></span>
+				<span class="fa fa-lg fa-smile-o fa-smile-o" style="color:#86c5da"></span>
+				<span class="fa fa-lg fa-child" style="color:#86c5da"></span>
+				<span class="fa fa-lg fa-camera fa-camera" style="color:#86c5da"></span>
 				<span class="fa fa-lg fa-info-circle" hidden></span>
-				<span class="fa fa-lg fa-times"></span>
+				<span class="fa fa-lg fa-times" style="color:#86c5da"></span>
 			</div>
 		</div>`);
 	$("#waifu").show().animate({ bottom: 0 }, 3000);

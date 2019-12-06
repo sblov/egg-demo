@@ -16,6 +16,9 @@ module.exports = app => {
     router.get('/crawler/home', controller.xlov.crawler.index);
     router.get('/crawler/list', controller.xlov.crawler.list);
     router.get('/crawler/code', controller.xlov.crawler.code);
+    router.get('/crawler/img', controller.xlov.crawler.img);
+
+    router.resources('img_resource', '/app/img-resource', controller.app.imgResource);
 
     // github登录认证
     app.passport.mount('github');

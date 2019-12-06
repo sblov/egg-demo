@@ -13,6 +13,7 @@
     <title>Home</title>
     {% endblock %}
     <style>
+        /* 点击火花样式 */
         .fireworks {
             position: absolute;
             top: 0;
@@ -20,6 +21,16 @@
             width: 100%;
             height: 100%;
             cursor: pointer;
+        }
+        /* 防止双击选中文本 */
+        body {
+            -moz-user-select: none;
+            /*火狐*/
+            -webkit-user-select: none;
+            /*webkit浏览器*/
+            -ms-user-select: none;
+            /*IE10*/
+            user-select: none;
         }
     </style>
 
@@ -31,6 +42,7 @@
     Home Page
     {% endblock %}
 </body>
+<!-- anime + firework  点击的烟花效果 -->
 <script src="/js/anime.js"></script>
 <script src="/js/firework.js"></script>
 {% block js %}
